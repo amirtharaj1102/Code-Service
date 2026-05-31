@@ -2,6 +2,8 @@
 
 This document explains how to configure and validate the three Lambda functions used by Code Service for code execution. The intent is to run Java, Python, and JavaScript snippets in isolated Lambda functions and return execution output (or compile/runtime errors) back to the UI.
 
+AWS Account creation step skipped.
+
 ## 1. Execution Contract (Code Service <-> Lambda)
 
 ### Request payload (from Code Service to Lambda)
