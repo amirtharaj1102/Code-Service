@@ -18,5 +18,15 @@ spring:
 jwt:
   secret: ${JWT_SECRET}
 
-execution-service:
-  url: ${EXECUTION_SERVICE_URL}
+execution:
+  mode: ${EXECUTION_MODE:aws}
+  sam:
+    endpoint: ${EXECUTION_SAM_ENDPOINT:http://127.0.0.1:3001}
+  aws:
+    region: ${EXECUTION_AWS_REGION}
+    profile: ${EXECUTION_AWS_PROFILE:}
+  lambda:
+    javascript: ${EXECUTION_LAMBDA_JS}
+    python: ${EXECUTION_LAMBDA_PYTHON}
+    java: ${EXECUTION_LAMBDA_JAVA}
+  default-timeout-ms: ${EXECUTION_TIMEOUT_MS:5000}

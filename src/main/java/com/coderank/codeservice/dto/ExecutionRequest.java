@@ -13,4 +13,5 @@ public class ExecutionRequest {
     private String code;
     private String language;
     private String tagName;
+    private Integer timeoutMs;
 }

@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>21</java.version>
+		<aws.sdk.version>2.25.60</aws.sdk.version>
 	</properties>
 
 	<dependencies>
@@ -44,6 +45,21 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>lambda</artifactId>
+			<version>${aws.sdk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>auth</artifactId>
+			<version>${aws.sdk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>regions</artifactId>
+			<version>${aws.sdk.version}</version>
 		</dependency>
 
 		<!-- JWT dependencies -->
